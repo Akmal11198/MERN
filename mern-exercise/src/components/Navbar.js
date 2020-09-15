@@ -6,24 +6,16 @@ const Navbar = () => (
     <Link to="/" className="navbar-brand">
       ExerciseTracker
     </Link>
-    <div className="collapse navbar-collapse">
-      <ul className="navbar-nav mr-auto">
-        <li className="navbar-item">
-          <Link to="/" className="nav-link">
-            Exercises
-          </Link>
-        </li>
-        <li className="navbar-item">
-          <Link to="/create" className="nav-link">
-            Add Exercise
-          </Link>
-        </li>
-        <li className="navbar-item">
-          <Link to="/user" className="nav-link">
-            Create User
-          </Link>
-        </li>
-      </ul>
+
+    <div className="navbar-nav">
+      <Link to="/create" className="nav-item nav-link">
+        Add Exercise
+      </Link>
+    </div>
+    <div className="navbar-nav">
+      <Link to="/user" className="nav-item nav-link">
+        Create User
+      </Link>
     </div>
   </nav>
 );
